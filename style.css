@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'ProximaNova-Black';
+    src: local('ProximaNova-Black'), url('https://nomail.com.ua/files/eot/aa46d234cf405126cdd1c36600e4b978.eot?#iefix') format('embedded-opentype'), url('https://nomail.com.ua/files/woff/aa46d234cf405126cdd1c36600e4b978.woff') format('woff'), url('https://nomail.com.ua/files/woff2/aa46d234cf405126cdd1c36600e4b978.woff2') format('woff2');
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: #070506 url('img/main-bg.png');
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1060px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.header__logo {
+    margin-right: 70px;
+}
+
+.nav__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.hero-subtitle,
+.hero-title {
+    font-family: 'ProximaNova-Black', sans-serif;
+    font-weight: 900;
+}
+
+.hero-subtitle {
+    display: block;
+    font-size: 40px;
+    line-height: 100%;
+    margin-top: 78px;
+}
+
+.hero-title {
+    font-size: 64px;
+    line-height: 78px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 572px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #AFAFAF;
+}
+
+.hero-premier {
+    display: block;
+    font-size: 18px;
+    line-height: 150%;
+    color: #B02000;
+    margin-bottom: 5px;
+}
+
+.hero-data {
+    display: block;
+    margin-bottom: 46px;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.button-play {
+    border: none;
+    position: relative;
+    width: 260px;
+    height: 65px;
+    background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%);
+    border-radius: 300px;
+    margin: 25px 35px;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    vertical-align: Top;
+    color: #FFFFFF;
+    padding-right: 70px;
+}
+
+.button-play::after {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #FFFFFF url('img/play.svg') 24px 20px no-repeat;
+    display: block;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 8px rgba(255, 255, 255, 0.3);
+}
+
+.button-play::before {
+    content: '';
+    position: absolute;
+    width: 81px;
+    height: 81px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: block;
+    right: -8px;
+    top: -8px;
+    border-radius: 50%;
+}
